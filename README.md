@@ -1,3 +1,7 @@
+# BikeGauge
+
+This a website combining data from both Bosch's e-bike motor logs and Polar wristwatch logs. A locally run website is used to display the data in OBS as an overlay.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
