@@ -1,4 +1,6 @@
+import { TimePlayer } from './TimePlayer.js';
 import bosch from './data.js';
+import 'temporal-polyfill/global';
 
 const hmmData = bosch.TrainingCenterDatabase.Activities.Activity.Lap;
 
@@ -19,6 +21,10 @@ export const DataDisplay = ({
                 <li>minTime: {minTime}</li>
                 <li>maxTime: {maxTime}</li>
             </ul>
+            <TimePlayer
+                start={Temporal.Instant.from(minTime)}
+                end={Temporal.Instant.from(minTime)}
+            />
         </div>
     );
 };
